@@ -13,7 +13,12 @@ export const mutations: MutationTree<RootState> = {
 }
 
 export const actions: ActionTree<RootState, RootState> = {
-  // 필요한 경우 액션을 추가하세요
+  incrementCount(context) {
+    context.commit('setCounter', context.state.count + 1)
+  },
+  decrementCount(context) {
+    context.commit('setCounter', context.state.count - 1)
+  }
 }
 
 export const getters: GetterTree<RootState, RootState> = {
