@@ -15,6 +15,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  server: {
+    host: '0.0.0.0', // 모든 인터페이스에서 요청을 수신
+    port: 3000,      // 포트는 그대로 유지
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
